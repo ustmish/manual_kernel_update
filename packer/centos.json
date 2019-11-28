@@ -23,7 +23,7 @@
       "boot_command": [
         "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/vagrant.ks<enter><wait>"
       ],
-
+      "post_shutdown_delay": "180s",
       "shutdown_command": "sudo -S /sbin/halt -h -p",
       "shutdown_timeout" : "5m",
 
